@@ -39,6 +39,10 @@
           "headers": "Custom Headers (one per line: 'Key: Value')"
         }
       }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the endpoint",
+      "unknown": "Unexpected error occurred"
     }
   }
 }
