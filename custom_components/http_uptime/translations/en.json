@@ -1,0 +1,44 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "HTTP Uptime Monitor",
+        "description": "Configure an HTTP endpoint to monitor",
+        "data": {
+          "name": "Name",
+          "url": "URL",
+          "method": "HTTP Method",
+          "timeout": "Timeout (seconds)",
+          "update_interval": "Update Interval (seconds)",
+          "verify_ssl": "Verify SSL Certificate",
+          "expected_status": "Expected Status Codes (comma-separated)",
+          "headers": "Custom Headers (one per line: 'Key: Value')"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to the endpoint",
+      "invalid_host": "Invalid hostname or IP address",
+      "unknown": "Unexpected error occurred"
+    },
+    "abort": {
+      "already_configured": "Endpoint is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "HTTP Uptime Monitor Options",
+        "description": "Update configuration for this endpoint",
+        "data": {
+          "method": "HTTP Method",
+          "timeout": "Timeout (seconds)",
+          "update_interval": "Update Interval (seconds)",
+          "verify_ssl": "Verify SSL Certificate",
+          "expected_status": "Expected Status Codes (comma-separated)",
+          "headers": "Custom Headers (one per line: 'Key: Value')"
+        }
+      }
+    }
+  }
+}

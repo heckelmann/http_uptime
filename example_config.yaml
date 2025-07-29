@@ -1,0 +1,47 @@
+# Example configuration for HTTP Uptime Monitor
+
+# This integration is configured through the Home Assistant UI,
+# but here are some example configurations you might use:
+
+## Basic Website Monitoring
+# Name: My Website
+# URL: https://example.com
+# Method: GET
+# Timeout: 10
+# Update Interval: 60
+# Verify SSL: true
+# Expected Status: 200
+
+## API Health Check with Authentication
+# Name: API Service
+# URL: https://api.example.com/health
+# Method: GET
+# Headers:
+# Authorization: Bearer your-api-token-here
+# Content-Type: application/json
+# Expected Status: 200,204
+
+## Internal Service (Skip SSL Verification)
+# Name: Internal Service
+# URL: https://internal.company.com:8443/status
+# Verify SSL: false
+# Expected Status: 200
+
+## POST Request Monitoring
+# Name: Webhook Test
+# URL: https://httpbin.org/post
+# Method: POST
+# Headers:
+# Content-Type: application/json
+# Expected Status: 200
+
+## Multiple Status Codes Accepted
+# Name: Flexible Service
+# URL: https://service.example.com/status
+# Expected Status: 200,202,204
+
+# Notes:
+# - Update intervals should be reasonable (60+ seconds) to avoid overloading endpoints
+# - Use proper authentication headers for secured endpoints
+# - Consider network timeouts when setting timeout values
+# - SSL verification should only be disabled for internal/development endpoints

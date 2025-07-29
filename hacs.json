@@ -1,0 +1,7 @@
+{
+  "name": "HTTP Uptime Monitor",
+  "content_in_root": false,
+  "country": ["US", "DE", "GB", "FR", "ES", "IT", "NL", "SE", "NO", "DK", "FI", "PL", "CZ", "HU", "AT", "CH", "BE", "LU", "IE", "PT", "GR", "BG", "RO", "HR", "SI", "SK", "LT", "LV", "EE", "MT", "CY"],
+  "domains": ["sensor"],
+  "homeassistant": "2023.3.0"
+}

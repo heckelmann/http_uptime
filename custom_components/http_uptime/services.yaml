@@ -1,0 +1,16 @@
+# Services for HTTP Uptime Monitor
+# Currently no services are defined, but this file is here for future extensions
+
+# Example service that could be added:
+# check_endpoint:
+#   name: Check Endpoint Now
+#   description: Immediately check an endpoint status
+#   fields:
+#     entity_id:
+#       name: Entity
+#       description: The HTTP Uptime Monitor sensor to check
+#       required: true
+#       selector:
+#         entity:
+#           domain: sensor
+#           integration: http_uptime
